@@ -110,9 +110,17 @@ button {
   text-shadow: 0 0 1px #fff;
   mix-blend-mode: hard-light;
   color: #000000;
-  -webkit-text-stroke: 1px #ffffff;
   right: 13px;
   top: 25px;
+}
+
+@supports (
+  (text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))
+) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+  }
 }
 
 .card__content {
