@@ -1,1 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', sans-serif;
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+  --main-color: #000;
+  --border: 2px solid #000;
+  /* Анимация сердца */
+  --contour-color: #000;
+  --animation-fill-color: red;
+}
